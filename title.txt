@@ -1,7 +1,5 @@
-**Image 1: Representation of Newton's First Law of Motion (Law of Inertia)**
+![Amoeba Structure](https://i.imgur.com/GupNtjA.png)
+**Amoeba Structure**
+- A simple outline representing an amoeba, showing various internal structures such as the nucleus, mitochondria, cytoplasm, and vacuoles, with labels to denote each component. The amoeba's outline is irregular to indicate its flexible shape, with pseudopodia extending outward to illustrate movement and food capture.
 
-- **Visual Elements:** 
-  - A solid table depicted simply in a straight horizontal line.
-  - A neatly drawn, stationary book on the left side of the table.
-  - A hockey puck in motion, represented on the right side of the table, with dashed lines behind it indicating its smooth, uninterrupted path.
-  - Above the scene, a clear label that reads "First Law of Motion
+![Amoeba Environment and Role](https://i.imgur

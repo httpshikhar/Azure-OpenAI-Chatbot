@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 import streamlit as st
+from img import *
 
 # Load environment variables
 load_dotenv()
@@ -69,7 +70,7 @@ def generation():
     # Generate detailed response
     if st.sidebar.button("Submit"):
         response = generate_response(subject, question)
-
+        gen_img()
         # Write detailed response to Streamlit and file
         st.write(response)
         with open("generated_text.txt", "w") as file:
@@ -79,3 +80,4 @@ def generation():
         title = generate_title(response)
         with open("title.txt", "w") as file:
             file.write(title)
+        

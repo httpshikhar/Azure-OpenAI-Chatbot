@@ -1,14 +1,16 @@
 import os
 from openai import AzureOpenAI
 import json
-import webbrowser
 import requests
+from dotenv import load_dotenv
 from text_generate import *
+import streamlit as st
 
+load_dotenv()
 client = AzureOpenAI(
     api_version="2024-05-01-preview",
     azure_endpoint="https://shikhar.openai.azure.com/",
-    api_key="d928f82e2ac841d4aaf058424b166ce6"
+    api_key=os.getenv("img_key")
 )
 
 
@@ -36,5 +38,4 @@ def gen_img():
             # Save images with different names
             with open(f"genimg_{i + 1}.png", "wb") as image_file:
                 image_file.write(image_response.content)
-
-gen_img()
+    st.image("genimg_1.png")
